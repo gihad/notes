@@ -1,6 +1,6 @@
 # Kings of Pool Launch
 
-Kings of Pool was world wide launched on Tuesday, Feb 21st, 2017. On Thursday, Feb 23rd, 2017 it started to receive features from Android's Google Play and Apple's App Stores in many countries. These features have substantially increase the number of online users we received and added a lot of stress to several components of the backend.
+Kings of Pool was worldwide launched on Tuesday, Feb 21st, 2017. On Thursday, Feb 23rd, 2017 it started to receive features from Android's Google Play and Apple's App Stores in many countries. These features have substantially increased the number of online users we received and added a lot of stress to several components of the backend.
 
 Before going into launch it was accepted that there was risk with adding many users to the game due to the lack of coverage over the backend systems for Kings of Pool. Some efforts were done over a 3 weeks period before launch to identify potentials bottlenecks and some were identified and fixed but due to lack of technical understanding over these systems and time constraints some potential bottlenecks sources were missed and others (e.g.: flubsub and vuvuzela) were identified but not addressed.
 
