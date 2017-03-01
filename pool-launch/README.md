@@ -4,7 +4,7 @@ Kings of Pool was worldwide launched on Tuesday, Feb 21st, 2017. On Thursday, Fe
 
 Before going into launch it was accepted that there was risk with adding many users to the game. Some efforts were done over a 3 weeks period before launch to identify potentials bottlenecks and some were identified and fixed but due to lack of technical understanding over these systems and time constraints some potential bottlenecks sources were missed and others (e.g.: flubsub and vuvuzela) were identified but not addressed. Also, we experienced a 23x increase in users during this period.
 
-Some of the good decisions that were made to the game's backend architecture that came into play during launch were to use async non-blocking code for flubsub and also to extract flubsub and vuvuzela out of the main rails backend, into separate microservices, had they been part of a monolithic architecture it would have been much more difficult and possibily would have caused additional downtime when addressing some of the issues described below.
+Some of the good decisions that were made to the game's backend architecture that came into play during launch were to use async non-blocking code for flubsub and also to extract flubsub and vuvuzela out of the main rails backend, into separate microservices, had they been part of a monolithic architecture it would have been much more difficult and possibly would have caused additional downtime when addressing some of the issues described below.
 
 ![Users online](users_online.png)
 
