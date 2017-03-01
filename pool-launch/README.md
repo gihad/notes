@@ -146,6 +146,7 @@ We had to come up with a solution on the spot, the solution was
 - Started 8 instances of vuvuzela on the server instead of 1
 - installed nginx on the server
 - Configured nginx to parse and tokenize the incoming request URLs and have an upstream load balancing according to a consistent hash algorithm, which was the token from the URL representing the room_id, in order to make sure that users in the same room were going to the same instance of vuvuzela.
+- To make sure that this would work, we captured and inspected original TCP data going into vuvuzela and made sure that newly added nginx instance was not altering the data.
 
 Simplified snippet of nginx Configured
 ```
@@ -182,3 +183,10 @@ This was a quick solution to allow us to scale the app horizontally and restore 
 
 #### Vuvuzela Error rate
 ![](vuvuzela.png)
+
+### Other optimizations
+
+- Increased unicorn worker count from 16 to 32
+- The AWS Aurora instance for Kings of Pool started hitting 100% usage which caused average response times from request to triple. We added 2 indexes to tables that solved the issue and brought usage down to bellow 50%
+  - CREATE INDEX index_club_memberships ON club_memberships(`user_id`)
+  - CREATE INDEX index_cues_users_on_user_id ON cues_users(`user_id`)
