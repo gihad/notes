@@ -83,7 +83,7 @@ note: AWS can generate certificates (including wildcard certs) for free that can
 
 #### Provisioning Storage
 
-You may have apps with needs to persist data and they require storage which often is a EBS volume in AWS. One option is to manually create a persistentVolume and attach it to a an application. Another option is to have a defaults so that an application will automatically bind storage to itself. In either case we need to create a StorageClass, here is an example of creating a default StorageClass that will allow dynamic provisioning of EBS volumes.
+You may have apps with needs to persist data and they require storage which often is a EBS volume in AWS. One option is to manually create a persistentVolume and attach it to an application. Another option is to have a default StorageClass so that an application will automatically bind storage to itself. In either case we need to create a StorageClass, here is an example of creating a default StorageClass that will allow dynamic provisioning of EBS volumes.
 
 create a file called generic-ebs-sc.yaml
 ```
