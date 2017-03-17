@@ -77,7 +77,9 @@ They both need to be changed to SSL and have the certificate added:
 
 ![](ssl.png)
 
-The openshift-MasterIn ELB doesn't need to be changed
+The openshift-MasterIn ELB doesn't need to be changed.
+
+note: AWS can generate certificates (including wildcard certs) for free that can only be used with ELB and Cloudfront, which seems to be enough for this setup.
 
 #### Provisioning Storage
 
