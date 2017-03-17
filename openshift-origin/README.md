@@ -33,7 +33,7 @@ I have tried several ways to deploy a production grade Kubernetes cluster and so
 
 I found a lot of these answers by using a Kubernetes distribution, Openshift Origin. More specifically they have a [Reference Architecture](https://access.redhat.com/documentation/en-us/reference_architectures/2016/html-single/deploying_openshift_container_platform_3_on_amazon_web_services/#Add-Node) which can be deployed using the openshift-ansible-contrib project.
 
-Another important resource is the [Openshift Origin](https://docs.openshift.org/latest/welcome/index.html) docs. I find a lot of additional value here because it documents a lot more then the core architecture of openshift, it also has a [Cluster Administration](https://docs.openshift.org/latest/admin_guide/index.html) and [Developer Guide](https://docs.openshift.org/latest/dev_guide/index.html) section.
+Another important resource is the [Openshift Origin](https://docs.openshift.org/latest/welcome/index.html) docs. I find a lot of additional value here because it documents a lot more then the core architecture of openshift, it also has a [Cluster Administration](https://docs.openshift.org/latest/admin_guide/index.html) and [Developer Guide](https://docs.openshift.org/latest/dev_guide/index.html) section. This is the benefit of using a PaaS solution built on top of kubernetes instead of just vanilla kubernetes.
 
 # Openshift Origin on AWS
 
